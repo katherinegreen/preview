@@ -12,30 +12,59 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | NFT preview card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-    0.041 ETH 3 days left Creation of Jules Wyvern
-
-    <p>test test test</p>
+    <div class="container">
+      <div class="image-container">
+        <a href="#">
+          <img
+            src="images/image-equilibrium.jpg"
+            alt="A picture of equilibrium"
+            id="eq"
+          />
+          <div class="overlay"></div>
+          <img src="images/icon-view.svg" alt="view" id="view" />
+        </a>
+      </div>
+      <a href="#" id="title"><h1>Equilibrium #3429</h1></a>
+      <p id="intro">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="price-countdown">
+        <div class="eth">
+          <img src="images/icon-ethereum.svg" class="icon-eth" />
+          <p id="price">0.041 ETH</p>
+        </div>
+        <div class="countdown">
+          <img src="images/icon-clock.svg" />
+          <p id="days-left">3 days left</p>
+        </div>
+      </div>
+      <div class="creation-info">
+        <img
+          src="images/image-avatar.png"
+          alt="An avatar of the creator"
+          id="avatar"
+        />
+        <p id="creator-line">
+          Creation of <a href="#" id="creator">Jules Wyvern</a>
+        </p>
+      </div>
+    </div>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Katherine Zha</a>.
     </div>
   </body>
 </html>
